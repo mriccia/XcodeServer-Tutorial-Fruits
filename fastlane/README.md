@@ -16,9 +16,9 @@ or alternatively using `brew install fastlane`
 
 # Available Actions
 ## iOS
-### ios ci_build
+### ios build_ci
 ```
-fastlane ios ci_build
+fastlane ios build_ci
 ```
 ios actions
 ### ios beta_ci
