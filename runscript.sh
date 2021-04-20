@@ -12,6 +12,7 @@ export APP_STORE_CONNECT_API_KEY_IS_KEY_CONTENT_BASE64=true
 export MATCH_PASSWORD=$(aws secretsmanager get-secret-value --secret-id MATCH_PASSWORD --query SecretString --output text)
 export MATCH_KEYCHAIN_PASSWORD=$(aws secretsmanager get-secret-value --secret-id MATCH_PASSWORD --query SecretString --output text)
 export AWS_REGION="us-east-2"
+export FASTLANE_SKIP_UPDATE_CHECK=1
 
 # Build
 fastlane tests
