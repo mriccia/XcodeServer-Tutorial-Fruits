@@ -37,12 +37,12 @@ class FruitsUITests: XCTestCase {
 		continueAfterFailure = false
 	}
 
-	func testWeHaveABananaCell() throws {
+	func testWeHaveAWatermelonCell() throws {
 		let app = XCUIApplication()
 		app.launch()
 
 		let cells = app.cells.allElementsBoundByIndex
-		let row = cells.filter { $0.label.contains("🍌" ) }
+		let row = cells.filter { $0.label.contains("🍉" ) }
 		XCTAssertNotNil(row)
 	}
 
