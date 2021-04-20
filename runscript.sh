@@ -18,5 +18,3 @@ export FASTLANE_SKIP_UPDATE_CHECK=1
 fastlane tests
 fastlane build_ci
 fastlane beta_ci
-
-git commit -am "Version Bump"
