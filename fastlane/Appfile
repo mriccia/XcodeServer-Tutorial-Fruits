@@ -1,4 +1,4 @@
 app_identifier("com.amazonaws.mriccia.testapp") # The bundle identifier of your app
 
-apple_id(ENV["APPLE_ID"])
+apple_id(ENV["T_APPLE_ID"])
 
