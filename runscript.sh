@@ -17,3 +17,5 @@ export AWS_REGION="us-east-2"
 fastlane tests
 fastlane build_ci
 fastlane beta_ci
+
+git commit -am "Version Bump"
