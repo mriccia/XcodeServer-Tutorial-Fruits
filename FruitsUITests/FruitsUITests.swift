@@ -36,15 +36,24 @@ class FruitsUITests: XCTestCase {
 	override func setUpWithError() throws {
 		continueAfterFailure = false
 	}
+  
+  func testWeHaveAWatermelonCell() throws {
+    let app = XCUIApplication()
+    app.launch()
 
-	func testWeHaveAWatermelonCell() throws {
-		let app = XCUIApplication()
-		app.launch()
+    let cells = app.cells.allElementsBoundByIndex
+    let row = cells.filter { $0.label.contains("🍉" ) }
+    XCTAssertFalse(row.isEmpty)
+  }
+  
+  func testWeHaveACoconutCell() throws {
+    let app = XCUIApplication()
+    app.launch()
 
-		let cells = app.cells.allElementsBoundByIndex
-		let row = cells.filter { $0.label.contains("🍉" ) }
-		XCTAssertFalse(row.isEmpty)
-	}
+    let cells = app.cells.allElementsBoundByIndex
+    let row = cells.filter { $0.label.contains("🥥" ) }
+    XCTAssertFalse(row.isEmpty)
+  }
 
 	func testWeHaveACherryCell() throws {
 		let app = XCUIApplication()
