@@ -43,12 +43,9 @@ class FruitsTests: XCTestCase {
 		XCTAssertNotNil(fruits)
 	}
 
-  func testFruitsContainsWatermelon() throws {
-    XCTAssert(fruits.contains { $0.name == "Watermelon 🍉" })
-  }
-  func testFruitsContainsCoconut() throws {
-    XCTAssert(fruits.contains { $0.name == "Coconut 🥥" })
-  }
+	func testFruitsContainsWatermelon() throws {
+		XCTAssert(fruits.contains { $0.name == "Watermelon 🍉" })
+	}
 }
 
 extension FruitsTests {
