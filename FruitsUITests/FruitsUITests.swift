@@ -45,6 +45,16 @@ class FruitsUITests: XCTestCase {
 		let row = cells.filter { $0.label.contains("🍉" ) }
 		XCTAssertFalse(row.isEmpty)
 	}
+  
+  
+  func testWeHaveACoconutCell() throws {
+    let app = XCUIApplication()
+    app.launch()
+
+    let cells = app.cells.allElementsBoundByIndex
+    let row = cells.filter { $0.label.contains("🥥" ) }
+    XCTAssertFalse(row.isEmpty)
+  }
 
 	func testWeHaveACherryCell() throws {
 		let app = XCUIApplication()
